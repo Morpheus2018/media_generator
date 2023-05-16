@@ -4,7 +4,7 @@
 ## Screenshot
 ![media_generator_gui.gif](https://github.com/Morpheus2018/media_generator/blob/main/media_generator_gui.gif)
 
-#### [Python GUI](https://github.com/Morpheus2018/media_generator/blob/main/media_generator_gui.py)
+#### [Python GUI](https://github.com/Morpheus2018/media_generator/blob/main/GUI/media_generator_gui.py)
 ```
 $ sudo apt-get install python3-tk
 $ python3 media_generator_gui.py
@@ -22,7 +22,7 @@ Wie lautet der Name der Episode 3? Optional 3 Info Episode Text
 Wie lautet der Name der Episode 4? Optional 4 Info Episode Text
 Weitere Episoden erstellen? (Ja/Nein) 
 ```
-[Show.Name.Test.S3.txt](https://github.com/Morpheus2018/media_generator/blob/master/Show.Name.Test.S3.txt)
+#### [output](https://github.com/Morpheus2018/media_generator/blob/main/Show%20Name%20Test%20(2023)/Staffel%203/Show.Name.Test.S03.txt)
 ```
 Show.Name.Test.S03E01.Optional.1.Info.Episode.Text.1080p.Stereo
 Show.Name.Test.S03E02.Optional.2.Info.Episode.Text.1080p.Stereo
@@ -30,10 +30,19 @@ Show.Name.Test.S03E03.Optional.3.Info.Episode.Text.1080p.Stereo
 Show.Name.Test.S03E04.Optional.4.Info.Episode.Text.1080p.Stereo
 ```
 ***
+#### [Combi GUI](https://github.com/Morpheus2018/media_generator/blob/main/GUI/media_combi_generator_gui.py)
 ```
-$ python3 media_generator.v2.py
+$ python3 media_combi_generator.py
+$ python3 media_combi_generator_gui.py
 ```
+#### [output](https://github.com/Morpheus2018/media_generator/blob/main/GUI/Show%20Name%20Test%20(2023)/Staffel%203/Show.Name.Test.S03.txt)
+
 ```
+Show.Name.Test.S03E01.Optional.1.Info.Episode.Text.1080p.Stereo
+Show.Name.Test.S03E02.Optional.2.Info.Episode.Text.1080p.Stereo
+Show.Name.Test.S03E03.Optional.3.Info.Episode.Text.1080p.Stereo
+Show.Name.Test.S03E04.Optional.4.Info.Episode.Text.1080p.Stereo
+
 Show Name Test: Season 3 (2023): Episode 1 - Optional 1 Info Episode Text
 Show Name Test: Season 3 (2023): Episode 2 - Optional 2 Info Episode Text
 Show Name Test: Season 3 (2023): Episode 3 - Optional 3 Info Episode Text
@@ -41,15 +50,9 @@ Show Name Test: Season 3 (2023): Episode 4 - Optional 4 Info Episode Text
 ```
 ***
 ```
-$ python3 media_combi_generator.py
-$ python3 media_combi_generator_gui.py
+$ python3 media_generator.v2.py
 ```
 ```
-Show.Name.Test.S03E01.Optional.1.Info.Episode.Text.1080p.Stereo
-Show.Name.Test.S03E02.Optional.2.Info.Episode.Text.1080p.Stereo
-Show.Name.Test.S03E03.Optional.3.Info.Episode.Text.1080p.Stereo
-Show.Name.Test.S03E04.Optional.4.Info.Episode.Text.1080p.Stereo
-
 Show Name Test: Season 3 (2023): Episode 1 - Optional 1 Info Episode Text
 Show Name Test: Season 3 (2023): Episode 2 - Optional 2 Info Episode Text
 Show Name Test: Season 3 (2023): Episode 3 - Optional 3 Info Episode Text
