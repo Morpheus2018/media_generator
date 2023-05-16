@@ -1,0 +1,4 @@
+Show.Name.Test.S03E01.Optional.1.Info.Episode.Text.1080p.Stereo
+Show.Name.Test.S03E02.Optional.2.Info.Episode.Text.1080p.Stereo
+Show.Name.Test.S03E03.Optional.3.Info.Episode.Text.1080p.Stereo
+Show.Name.Test.S03E04.Optional.4.Info.Episode.Text.1080p.Stereo
