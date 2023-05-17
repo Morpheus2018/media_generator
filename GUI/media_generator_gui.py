@@ -1,12 +1,10 @@
 import os
 import tkinter as tk
 import tkinter.messagebox as tkMessageBox
-
 def create_widget(widget_type, text, row, column, padx=5, pady=5):
     widget = widget_type(root, text=text)
     widget.grid(row=row, column=column, padx=padx, pady=pady)
     return widget
-
 def create_episodes():
     global num_episodes
     if not name_entry.get() or not season_entry.get() or not num_episodes_entry.get():
@@ -25,10 +23,12 @@ def create_episodes():
         episode_entry = create_widget(tk.Entry, "", i+5, 1)
         episode_entries.append(episode_entry)
 
-    # create button to create files
-    create_files_button = create_widget(tk.Button, "Dateien erstellen", num_episodes+5, 1, 2)
+    # create button
+    create_files_button = create_widget(tk.Button, "Dateien Erstellen", num_episodes+5, 1, 2)
     create_files_button.config(command=create_files)
-
+    new_episode_button = create_widget(tk.Button, "Neu Staffel Erstellen", num_episodes+5, 2, 2)
+    new_episode_button.config(command=reset_episode_form)
+    create_episodes_button.config(state=tk.DISABLED)
 def create_files():
     if not name_entry.get() or not season_entry.get() or not quali_entry.get() or not episode_entries:
         tk.messagebox.showwarning("Warnung", "Bitte füllen Sie alle Felder aus.")
@@ -56,7 +56,6 @@ def create_files():
         for i in range(episodes):
             episode_name = episode_entries[i].get().replace(" ", ".")
             f.write(f"{name}.S{season:02}E{i+1:02}.{episode_name}.{quali}\n")
-
 def reset_form():
     global episode_entries, num_episodes
     episode_entries = []
@@ -67,9 +66,9 @@ def reset_form():
     year_entry.delete(0, tk.END)
     num_episodes_entry.delete(0, tk.END)
     for widget in root.grid_slaves():
-        if int(widget.grid_info()["row"]) >= 5 and widget != reset_button and widget != new_episode_button:
+        if int(widget.grid_info()["row"]) >= 5 and widget != reset_button:
             widget.grid_forget()
-
+    create_episodes_button.config(state=tk.NORMAL)
 def reset_episode_form():
     global episode_entries, num_episodes
     episode_entries = []
@@ -77,10 +76,10 @@ def reset_episode_form():
     season_entry.delete(0, tk.END)
     num_episodes_entry.delete(0, tk.END)
     for widget in root.grid_slaves():
-        if int(widget.grid_info()["row"]) >= 5 and widget != new_episode_button and widget != reset_button:
+        if int(widget.grid_info()["row"]) >= 5 and widget != reset_button:
             widget.grid_forget()
+    create_episodes_button.config(state=tk.NORMAL)
 
-# create main window
 root = tk.Tk()
 root.title("Media Generator GUI")
 
@@ -95,17 +94,15 @@ year_label = create_widget(tk.Label, "Jahr:", 3, 0)
 year_entry = create_widget(tk.Entry, "", 3, 1)
 num_episodes_label = create_widget(tk.Label, "Anzahl der Episoden:", 4, 0)
 num_episodes_entry = create_widget(tk.Entry, "", 4, 1)
+create_episodes_button = create_widget(tk.Button, " Episoden erstellen ", 4, 2)
+create_episodes_button.config(command=create_episodes)
 
 #initialize variables
 episode_entries = []
 num_episodes = 0
 
-#create button
-create_episodes_button = create_widget(tk.Button, "Episoden erstellen", 4, 2)
-create_episodes_button.config(command=create_episodes)
-new_episode_button = create_widget(tk.Button, "Neu Staffel Erstellen", 5, 2, pady=10)
-new_episode_button.config(command=reset_episode_form)
-reset_button = create_widget(tk.Button, "Alles Zurücksetzen", 6, 2, pady=10)
+#create reset button
+reset_button = create_widget(tk.Button, "Alles Zurücksetzen", 3, 2, pady=10)
 reset_button.config(command=reset_form)
 
 #run main loop
