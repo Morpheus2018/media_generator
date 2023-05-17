@@ -24,9 +24,9 @@ def create_episodes():
         episode_entries.append(episode_entry)
 
     # create button
-    create_files_button = create_widget(tk.Button, "Dateien Erstellen", num_episodes+5, 1, 2)
+    create_files_button = create_widget(tk.Button, "Dateien erstellen", num_episodes+5, 1, 2)
     create_files_button.config(command=create_files)
-    new_episode_button = create_widget(tk.Button, "Neu Staffel Erstellen", num_episodes+5, 2, 2)
+    new_episode_button = create_widget(tk.Button, "Neu Staffel erstellen", num_episodes+5, 2, 2)
     new_episode_button.config(command=reset_episode_form)
     create_episodes_button.config(state=tk.DISABLED)
 def create_files():
