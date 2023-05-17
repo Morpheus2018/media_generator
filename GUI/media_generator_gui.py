@@ -51,8 +51,6 @@ def create_files():
     if not os.path.exists(season_dir):
         os.makedirs(season_dir)
 
-    # write output to file
-    #with open(f"{name}.S{season:02}.txt", "w") as f:
     # Ausgabe in Datei schreiben
     with open(f"{season_dir}/{name}.S{season:02}.txt", "w") as f:
         for i in range(episodes):
@@ -69,7 +67,17 @@ def reset_form():
     year_entry.delete(0, tk.END)
     num_episodes_entry.delete(0, tk.END)
     for widget in root.grid_slaves():
-        if int(widget.grid_info()["row"]) >= 5 and widget != reset_button:
+        if int(widget.grid_info()["row"]) >= 5 and widget != reset_button and widget != new_episode_button:
+            widget.grid_forget()
+
+def reset_episode_form():
+    global episode_entries, num_episodes
+    episode_entries = []
+    num_episodes = 0
+    season_entry.delete(0, tk.END)
+    num_episodes_entry.delete(0, tk.END)
+    for widget in root.grid_slaves():
+        if int(widget.grid_info()["row"]) >= 5 and widget != new_episode_button and widget != reset_button:
             widget.grid_forget()
 
 # create main window
@@ -87,15 +95,17 @@ year_label = create_widget(tk.Label, "Jahr:", 3, 0)
 year_entry = create_widget(tk.Entry, "", 3, 1)
 num_episodes_label = create_widget(tk.Label, "Anzahl der Episoden:", 4, 0)
 num_episodes_entry = create_widget(tk.Entry, "", 4, 1)
-create_episodes_button = create_widget(tk.Button, "Episoden erstellen", 4, 2)
-create_episodes_button.config(command=create_episodes)
 
 #initialize variables
 episode_entries = []
 num_episodes = 0
 
-#create reset button
-reset_button = create_widget(tk.Button, "Zurücksetzen", num_episodes+5, 2, pady=10)
+#create button
+create_episodes_button = create_widget(tk.Button, "Episoden erstellen", 4, 2)
+create_episodes_button.config(command=create_episodes)
+new_episode_button = create_widget(tk.Button, "Neu Staffel Erstellen", 5, 2, pady=10)
+new_episode_button.config(command=reset_episode_form)
+reset_button = create_widget(tk.Button, "Alles Zurücksetzen", 6, 2, pady=10)
 reset_button.config(command=reset_form)
 
 #run main loop
