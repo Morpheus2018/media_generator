@@ -2,7 +2,7 @@
 
 #### Die Namensgebung und Ordnerstruktur für Filme und Serien in [Emby](https://emby.media/support/articles/TV-Naming.html#episode-naming-conventions), [Plex](https://support.plex.tv/articles/naming-and-organizing-your-tv-show-files/#toc-0) und [Jellyfin](https://jellyfin.org/docs/general/server/media/shows) wird durch bestimmte Konventionen geregelt. Der erstellte Generator ermöglicht es, diese Konventionen für ihre Media Datei einzuhalten und somit die korrekte Benennung der Videodateien sicherzustellen. Die Ausgabedatei kann in der Serienordnerstruktur genutzt werden, um die richtigen Ordner und Dateien anzulegen. 
 ## Screenshot
-![media_generator_gui.gif](https://github.com/Morpheus2018/media_generator/blob/main/media_generator_gui.gif)
+![media_generator_gui.gif](https://github.com/Morpheus2018/media_generator/blob/main/media_generator.gif)
 
 #### [Python GUI](https://github.com/Morpheus2018/media_generator/blob/main/GUI/media_generator_gui.py)
 ```
