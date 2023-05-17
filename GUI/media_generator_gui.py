@@ -44,7 +44,7 @@ def create_files():
     episodes = len(episode_entries)
 
     # Verzeichnisse erstellen
-    # base_dir = "/<pfad>/<zum>/<ausgabepfad>" # Optional der gewünschte Ausgabepfad
+    # base_dir = "/<pfad>/<zum>/<ausgabepfad>" # Optional den gewünschte Ausgabepfad ändern
     # name_year_dir = os.path.join(base_dir, f"{name_entry.get()} ({year_entry.get()})") # Ersetze durch die untere angabe: name_year_dir
     name_year_dir = os.path.join(f"{name_entry.get()} ({year_entry.get()})")
     season_dir = os.path.join(name_year_dir, f"Staffel {season_entry.get()}")
