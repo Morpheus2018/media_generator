@@ -74,7 +74,7 @@ def create_files():
         f.write("\n")
         f.write(output_str_2)
 
-    tkMessageBox.showinfo("Erfolgreich", f"{name_entry.get()}, Staffel {season_entry.get()}, {year_entry.get()} wurden erstellt.")
+    tkMessageBox.showinfo("Erfolgreich", f"{name_entry.get()} ({year_entry.get()}), Staffel {season_entry.get()} wurden erstellt.")
 def reset_form():
     global episode_entries, num_episodes
     episode_entries = []
