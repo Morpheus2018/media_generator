@@ -31,7 +31,7 @@ Show.Name.Test.S03E04.Optional.4.Info.Episode.Text.1080p.Stereo
 ```
 ### Optional den gewünschten [Ausgabepfad](https://github.com/Morpheus2018/media_generator/blob/main/GUI/media_generator_gui.py#L47) ändern
 ```
-# base_dir = "/<pfad>/<zum>/<ausgabepfad>" # Optional den gewünschte Ausgabepfad ändern
+# base_dir = "/<pfad>/<zum>/<ausgabepfad>" # Optional den gewünschten Ausgabepfad ändern
 # name_year_dir = os.path.join(base_dir, f"{name_entry.get()} ({year_entry.get()})") # Ersetze durch die untere angabe: name_year_dir
 ```
 ***
