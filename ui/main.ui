@@ -135,6 +135,9 @@
              <property name="text">
               <string>  Neue Dateien erstellen  </string>
              </property>
+             <property name="autoDefault">
+              <bool>true</bool>
+             </property>
             </widget>
            </item>
            <item>
@@ -144,6 +147,12 @@
              </property>
              <property name="text">
               <string>  Erstellen</string>
+             </property>
+             <property name="autoDefault">
+              <bool>true</bool>
+             </property>
+             <property name="default">
+              <bool>true</bool>
              </property>
             </widget>
            </item>
@@ -155,6 +164,9 @@
              <property name="text">
               <string>  Öffnen</string>
              </property>
+             <property name="autoDefault">
+              <bool>true</bool>
+             </property>
             </widget>
            </item>
            <item>
@@ -164,6 +176,9 @@
              </property>
              <property name="text">
               <string>  Beenden</string>
+             </property>
+             <property name="autoDefault">
+              <bool>true</bool>
              </property>
             </widget>
            </item>
@@ -191,6 +206,9 @@
              </property>
              <property name="text">
               <string>  Weitere Staffel erstellen</string>
+             </property>
+             <property name="autoDefault">
+              <bool>true</bool>
              </property>
             </widget>
            </item>
@@ -252,6 +270,18 @@
    </property>
   </action>
  </widget>
+ <tabstops>
+  <tabstop>name_lineedit_tab5</tabstop>
+  <tabstop>staffel_lineedit_tab5</tabstop>
+  <tabstop>qualitat_lineedit_tab5</tabstop>
+  <tabstop>jahr_lineedit_tab5</tabstop>
+  <tabstop>text_edit_episode_name_tab5</tabstop>
+  <tabstop>erstellen_button_tab5</tabstop>
+  <tabstop>weitere_erstellen_button_tab5</tabstop>
+  <tabstop>neu_erstellen_button_tab5</tabstop>
+  <tabstop>offnen_button_tab5</tabstop>
+  <tabstop>exit_button_tab5</tabstop>
+ </tabstops>
  <resources/>
  <connections>
   <connection>
@@ -507,6 +537,22 @@
     <hint type="destinationlabel">
      <x>244</x>
      <y>311</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>jahr_lineedit_tab5</sender>
+   <signal>returnPressed()</signal>
+   <receiver>erstellen_button_tab5</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>280</x>
+     <y>138</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>228</x>
+     <y>191</y>
     </hint>
    </hints>
   </connection>

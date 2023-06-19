@@ -81,15 +81,20 @@ class Ui_MainWindow(object):
         self.horizontalLayout_32 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_32.setObjectName("horizontalLayout_32")
         self.neu_erstellen_button_tab5 = QtWidgets.QPushButton(self.frame_5)
+        self.neu_erstellen_button_tab5.setAutoDefault(True)
         self.neu_erstellen_button_tab5.setObjectName("neu_erstellen_button_tab5")
         self.horizontalLayout_32.addWidget(self.neu_erstellen_button_tab5)
         self.erstellen_button_tab5 = QtWidgets.QPushButton(self.frame_5)
+        self.erstellen_button_tab5.setAutoDefault(True)
+        self.erstellen_button_tab5.setDefault(True)
         self.erstellen_button_tab5.setObjectName("erstellen_button_tab5")
         self.horizontalLayout_32.addWidget(self.erstellen_button_tab5)
         self.offnen_button_tab5 = QtWidgets.QPushButton(self.frame_5)
+        self.offnen_button_tab5.setAutoDefault(True)
         self.offnen_button_tab5.setObjectName("offnen_button_tab5")
         self.horizontalLayout_32.addWidget(self.offnen_button_tab5)
         self.exit_button_tab5 = QtWidgets.QPushButton(self.frame_5)
+        self.exit_button_tab5.setAutoDefault(True)
         self.exit_button_tab5.setObjectName("exit_button_tab5")
         self.horizontalLayout_32.addWidget(self.exit_button_tab5)
         self.verticalLayout_12.addLayout(self.horizontalLayout_32)
@@ -102,6 +107,7 @@ class Ui_MainWindow(object):
         self.text_edit_episode_name_tab5.setObjectName("text_edit_episode_name_tab5")
         self.verticalLayout_8.addWidget(self.text_edit_episode_name_tab5)
         self.weitere_erstellen_button_tab5 = QtWidgets.QPushButton(self.frame_5)
+        self.weitere_erstellen_button_tab5.setAutoDefault(True)
         self.weitere_erstellen_button_tab5.setObjectName("weitere_erstellen_button_tab5")
         self.verticalLayout_8.addWidget(self.weitere_erstellen_button_tab5)
         self.verticalLayout_12.addLayout(self.verticalLayout_8)
@@ -150,7 +156,17 @@ class Ui_MainWindow(object):
         self.action_Neue_Dateien_erstellen_tab4.triggered.connect(self.qualitat_lineedit_tab5.clear) # type: ignore
         self.action_Neue_Dateien_erstellen_tab4.triggered.connect(self.name_lineedit_tab5.clear) # type: ignore
         self.action_Neue_Dateien_erstellen_tab4.triggered.connect(self.text_edit_episode_name_tab5.clear) # type: ignore
+        self.jahr_lineedit_tab5.returnPressed.connect(self.erstellen_button_tab5.click) # type: ignore
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
+        MainWindow.setTabOrder(self.name_lineedit_tab5, self.staffel_lineedit_tab5)
+        MainWindow.setTabOrder(self.staffel_lineedit_tab5, self.qualitat_lineedit_tab5)
+        MainWindow.setTabOrder(self.qualitat_lineedit_tab5, self.jahr_lineedit_tab5)
+        MainWindow.setTabOrder(self.jahr_lineedit_tab5, self.text_edit_episode_name_tab5)
+        MainWindow.setTabOrder(self.text_edit_episode_name_tab5, self.erstellen_button_tab5)
+        MainWindow.setTabOrder(self.erstellen_button_tab5, self.weitere_erstellen_button_tab5)
+        MainWindow.setTabOrder(self.weitere_erstellen_button_tab5, self.neu_erstellen_button_tab5)
+        MainWindow.setTabOrder(self.neu_erstellen_button_tab5, self.offnen_button_tab5)
+        MainWindow.setTabOrder(self.offnen_button_tab5, self.exit_button_tab5)
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
