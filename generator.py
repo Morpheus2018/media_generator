@@ -8,6 +8,7 @@ class MyQtApp(main.Ui_MainWindow, QtWidgets.QMainWindow):
     def __init__(self):
         super(MyQtApp, self).__init__()
         self.setupUi(self)
+        self.setWindowTitle("Media Generator")
 
         self.action_Erstellen_tab4.triggered.connect(self.erstellen)
         self.action_oeffnen_tab4.triggered.connect(self.ordner_offnen)
@@ -62,7 +63,7 @@ class MyQtApp(main.Ui_MainWindow, QtWidgets.QMainWindow):
             output_str_2 += "{}: Season {} ({}): Episode {} - {}\n".format(self.name_lineedit_tab5.text(), season_num, jahr, episode_num, episode_str)
 
         # Verzeichnisse erstellen
-        base_dir = "~"#"/<pfad>/<zum>/<öffnen>" # Optional den gewünschten Pfad ändern.
+        base_dir = ""#"/<pfad>/<zum>/<öffnen>" # Optional den gewünschten Pfad ändern.
         name_year_dir = os.path.join(base_dir, f"{self.name_lineedit_tab5.text()} ({self.jahr_lineedit_tab5.text()})")
         season_dir = os.path.join(name_year_dir, f"Staffel {self.staffel_lineedit_tab5.text()}")
         if not os.path.exists(season_dir):
@@ -82,7 +83,7 @@ class MyQtApp(main.Ui_MainWindow, QtWidgets.QMainWindow):
 
     def ordner_offnen(self):
         folder_path = self.season_dir
-        folder_path2 = "~"#"/<pfad>/<zum>/<öffnen>" # Optional den gewünschten Pfad ändern.
+        folder_path2 = ""#"/<pfad>/<zum>/<öffnen>" # Optional den gewünschten Pfad ändern.
 
         if sys.platform == 'linux':
             if os.path.exists(folder_path):
