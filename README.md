@@ -8,6 +8,10 @@
 ### Optional den gewünschten [Ausgabepfad](#L65) ändern
 ```
 base_dir = "~"#"/<pfad>/<zum>/<öffnen>" # Optional den gewünschten Pfad ändern.
+
+def ordner_offnen(self):
+    folder_path = self.season_dir
+    folder_path2 = ""#"/<pfad>/<zum>/<öffnen>" # Optional den gewünschten Pfad ändern.
 ```
 ***
 
