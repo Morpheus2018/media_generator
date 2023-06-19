@@ -5,7 +5,7 @@
 ![media_generator.gif](https://github.com/Morpheus2018/media_generator/blob/main/screenshot/media_generator.gif)
 
 
-### Optional den gewünschten [Ausgabepfad](#L65) ändern
+### Optional den gewünschten [Ausgabepfad](https://github.com/Morpheus2018/media_generator/blob/main/media_generator.py#L66) ändern
 ```
 base_dir = ""#"/<pfad>/<zum>/<öffnen>" # Optional den gewünschten Pfad ändern.
 
@@ -15,7 +15,7 @@ def ordner_offnen(self):
 ```
 ***
 
-#### [output]()
+#### [output](https://github.com/Morpheus2018/media_generator/blob/main/Show%20Name%20Test%20(2023)/Staffel%201/Show.Name.Test.S01.txt)
 
 ```
 Show.Name.Test.S01E01.Optional.1.Info.Episode.Text.1080p.Stereo
