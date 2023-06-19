@@ -1,9 +1,0 @@
-Show.Name.Test.S2E01.Optional.1.Info.Episode.Text.1080p.Stereo
-Show.Name.Test.S2E02.Optional.2.Info.Episode.Text.1080p.Stereo
-Show.Name.Test.S2E03.Optional.3.Info.Episode.Text.1080p.Stereo
-Show.Name.Test.S2E04.Optional.4.Info.Episode.Text.1080p.Stereo
-
-Show Name Test: Season 2 (2023): Episode 1 - Optional 1 Info Episode Text
-Show Name Test: Season 2 (2023): Episode 2 - Optional 2 Info Episode Text
-Show Name Test: Season 2 (2023): Episode 3 - Optional 3 Info Episode Text
-Show Name Test: Season 2 (2023): Episode 4 - Optional 4 Info Episode Text
