@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>490</width>
+    <height>442</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QFrame" name="frame_5">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_7">
+       <item row="0" column="0">
+        <layout class="QVBoxLayout" name="verticalLayout_12">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_9">
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_10">
+             <item>
+              <widget class="QLabel" name="label_39">
+               <property name="text">
+                <string>Name:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_40">
+               <property name="text">
+                <string>Staffel Nr.:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_41">
+               <property name="text">
+                <string>Qualität:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_42">
+               <property name="text">
+                <string>Jahr:</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_11">
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_8">
+               <item>
+                <widget class="QLineEdit" name="name_lineedit_tab5">
+                 <property name="font">
+                  <font>
+                   <italic>true</italic>
+                  </font>
+                 </property>
+                 <property name="placeholderText">
+                  <string>Name der Serie eintragen.</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="staffel_lineedit_tab5">
+               <property name="font">
+                <font>
+                 <italic>true</italic>
+                </font>
+               </property>
+               <property name="placeholderText">
+                <string>Staffel Nr. der Serie eintragen.</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="qualitat_lineedit_tab5">
+               <property name="font">
+                <font>
+                 <italic>true</italic>
+                </font>
+               </property>
+               <property name="placeholderText">
+                <string>Qualität der Serie eintragen.</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="jahr_lineedit_tab5">
+               <property name="font">
+                <font>
+                 <italic>true</italic>
+                </font>
+               </property>
+               <property name="placeholderText">
+                <string>Jahr der Serie eintragen.</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_4">
+           <property name="text">
+            <string>Optionen Auswahl:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_32">
+           <item>
+            <widget class="QPushButton" name="neu_erstellen_button_tab5">
+             <property name="toolTip">
+              <string>Zurücksetzen und neue Dateien erstellen.</string>
+             </property>
+             <property name="text">
+              <string>  Neue Dateien erstellen  </string>
+             </property>
+             <property name="autoDefault">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="erstellen_button_tab5">
+             <property name="toolTip">
+              <string>Erstellen und speichern.</string>
+             </property>
+             <property name="text">
+              <string>  Erstellen</string>
+             </property>
+             <property name="autoDefault">
+              <bool>true</bool>
+             </property>
+             <property name="default">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="offnen_button_tab5">
+             <property name="toolTip">
+              <string>Ordner mit erstellten Datei öffnen.</string>
+             </property>
+             <property name="text">
+              <string>  Öffnen</string>
+             </property>
+             <property name="autoDefault">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="exit_button_tab5">
+             <property name="toolTip">
+              <string>Beenden.</string>
+             </property>
+             <property name="text">
+              <string>  Beenden</string>
+             </property>
+             <property name="autoDefault">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_8">
+           <item>
+            <widget class="QLabel" name="label_3">
+             <property name="toolTip">
+              <string>Episoden Name eintragen.</string>
+             </property>
+             <property name="text">
+              <string>Episoden Name:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPlainTextEdit" name="text_edit_episode_name_tab5"/>
+           </item>
+           <item>
+            <widget class="QPushButton" name="weitere_erstellen_button_tab5">
+             <property name="toolTip">
+              <string>Weitere Staffel erstellen.</string>
+             </property>
+             <property name="text">
+              <string>  Weitere Staffel erstellen</string>
+             </property>
+             <property name="autoDefault">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>490</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMen">
+    <property name="title">
+     <string>Menü</string>
+    </property>
+    <addaction name="action_Erstellen_tab4"/>
+    <addaction name="action_oeffnen_tab4"/>
+    <addaction name="separator"/>
+    <addaction name="action_Weitere_Staffel_erstellen_tab4"/>
+    <addaction name="action_Neue_Dateien_erstellen_tab4"/>
+    <addaction name="separator"/>
+    <addaction name="action_Beenden_tab4"/>
+   </widget>
+   <addaction name="menuMen"/>
+  </widget>
+  <action name="action_Erstellen_tab4">
+   <property name="text">
+    <string>Erstellen</string>
+   </property>
+  </action>
+  <action name="action_oeffnen_tab4">
+   <property name="text">
+    <string>Öffnen</string>
+   </property>
+  </action>
+  <action name="action_Weitere_Staffel_erstellen_tab4">
+   <property name="text">
+    <string>Weitere Staffel erstellen</string>
+   </property>
+  </action>
+  <action name="action_Neue_Dateien_erstellen_tab4">
+   <property name="text">
+    <string>Neue Dateien erstellen</string>
+   </property>
+  </action>
+  <action name="action_Beenden_tab4">
+   <property name="text">
+    <string>Beenden</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>name_lineedit_tab5</tabstop>
+  <tabstop>staffel_lineedit_tab5</tabstop>
+  <tabstop>qualitat_lineedit_tab5</tabstop>
+  <tabstop>jahr_lineedit_tab5</tabstop>
+  <tabstop>text_edit_episode_name_tab5</tabstop>
+  <tabstop>erstellen_button_tab5</tabstop>
+  <tabstop>weitere_erstellen_button_tab5</tabstop>
+  <tabstop>neu_erstellen_button_tab5</tabstop>
+  <tabstop>offnen_button_tab5</tabstop>
+  <tabstop>exit_button_tab5</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>exit_button_tab5</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>435</x>
+     <y>189</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>453</x>
+     <y>439</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_Beenden_tab4</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>244</x>
+     <y>220</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>weitere_erstellen_button_tab5</sender>
+   <signal>clicked()</signal>
+   <receiver>text_edit_episode_name_tab5</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>351</x>
+     <y>404</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>346</x>
+     <y>316</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>weitere_erstellen_button_tab5</sender>
+   <signal>clicked()</signal>
+   <receiver>staffel_lineedit_tab5</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>299</x>
+     <y>399</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>290</x>
+     <y>87</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>neu_erstellen_button_tab5</sender>
+   <signal>clicked()</signal>
+   <receiver>text_edit_episode_name_tab5</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>157</x>
+     <y>195</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>166</x>
+     <y>298</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>neu_erstellen_button_tab5</sender>
+   <signal>clicked()</signal>
+   <receiver>jahr_lineedit_tab5</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>150</x>
+     <y>188</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>149</x>
+     <y>142</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>neu_erstellen_button_tab5</sender>
+   <signal>clicked()</signal>
+   <receiver>qualitat_lineedit_tab5</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>127</x>
+     <y>191</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>124</x>
+     <y>115</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>neu_erstellen_button_tab5</sender>
+   <signal>clicked()</signal>
+   <receiver>staffel_lineedit_tab5</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>88</x>
+     <y>187</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>104</x>
+     <y>80</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>neu_erstellen_button_tab5</sender>
+   <signal>clicked()</signal>
+   <receiver>name_lineedit_tab5</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>58</x>
+     <y>187</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>131</x>
+     <y>56</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_Weitere_Staffel_erstellen_tab4</sender>
+   <signal>triggered()</signal>
+   <receiver>text_edit_episode_name_tab5</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>244</x>
+     <y>311</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_Neue_Dateien_erstellen_tab4</sender>
+   <signal>triggered()</signal>
+   <receiver>jahr_lineedit_tab5</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>280</x>
+     <y>138</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_Weitere_Staffel_erstellen_tab4</sender>
+   <signal>triggered()</signal>
+   <receiver>staffel_lineedit_tab5</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>280</x>
+     <y>82</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_Neue_Dateien_erstellen_tab4</sender>
+   <signal>triggered()</signal>
+   <receiver>staffel_lineedit_tab5</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>280</x>
+     <y>82</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_Neue_Dateien_erstellen_tab4</sender>
+   <signal>triggered()</signal>
+   <receiver>qualitat_lineedit_tab5</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>244</x>
+     <y>220</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>280</x>
+     <y>110</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_Neue_Dateien_erstellen_tab4</sender>
+   <signal>triggered()</signal>
+   <receiver>name_lineedit_tab5</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>280</x>
+     <y>53</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_Neue_Dateien_erstellen_tab4</sender>
+   <signal>triggered()</signal>
+   <receiver>text_edit_episode_name_tab5</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>244</x>
+     <y>311</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>jahr_lineedit_tab5</sender>
+   <signal>returnPressed()</signal>
+   <receiver>erstellen_button_tab5</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>280</x>
+     <y>138</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>228</x>
+     <y>191</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
